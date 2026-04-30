@@ -1,20 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgcolor: rgb(3, 3, 7);
+    --bg2:  white;
+    --icon: #FAB005;
+    --shado: #152A48 ;
+    --shado2: #f8ba28 ;
+    --height: 100vh;
+    --radius: 10px;
+    --space: 16px;
+}
+
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: var(--height);
     justify-content: center;
     align-items: center;
+    background-color: var(--shado2);
+}
+.card{
+    width: 400px;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.card h1{
+    font-size: 22px;
+    text-align: center;
+}
+
+.subtext{
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+form{
+    display: flex;
+    gap: var(--space);
+    flex-direction: column;
+    height: 100%;
 }
 .media-info{
     display: flex;
+    flex-direction: column;
+    gap: var(--space);
+    margin-bottom: var(--space);
 }
-.media-info > div {
-    
+.media-info > div{
+    display: flex;
+    align-items: center;
+    gap: var(--space);
+    /* background: var(--bg2);
+    padding: 10px;
+    border-radius: var(--radius);
+    */
+    box-shadow: 0 4px 10px var(--shado); 
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+}
+/* .media-info input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+} */
+ .media-info input {
+    padding: 12px;
+    border: none;
+ }
+.media-info i{
+    color: var(--icon);
+    font-size: 18px;
 }
 #result{
-   display: block;
-   padding-top: 1%;
-   text-align: center;
+    flex: 1;
+    width: 100%;
+    border-radius: var(--radius);
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 10px var(--shado);
+    resize: none;
 }
 form > button{
+    width: 100%;
 }

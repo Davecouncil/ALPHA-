@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,32 @@
     <link rel="stylesheet" href="alpha.css">
     <script src="alpha.js"></script>
 </head>
+
 <body>
-    <div class="card">
-        <h1 class="heading">ENGAGEMENT RATE CALCULATOR</h1>
-        <form>
-            <div class="media-info">
-                <div class="followers">
-                    <i class="fa-regular fa-user"></i>
-                    <input type="number" placeholder="FOLLOWERS" required>
+    <div class="container">
+        <div class="card">
+            <h1 class="heading">ENGAGEMENT RATE CALCULATOR</h1>
+             <p class="subtext">Measure how well your audience interacts with your content</p>
+            <form>
+                <div class="media-info">
+                    <div class="followers">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="number" placeholder="FOLLOWERS" required>
+                    </div>
+                    <div class="comments">
+                        <i class="fa-regular fa-comment"></i>
+                        <input type="number" placeholder="COMMENTS" required>
+                    </div>
+                    <div class="likes">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <input type="number" placeholder="LIKES" required>
+                    </div>
                 </div>
-                <div class="comments">
-                    <i class="fa-regular fa-comment"></i>
-                    <input type="number" placeholder="COMMENTS" required>
-                </div>
-                <div class="likes">
-                    <i class="fa-regular fa-thumbs-up"></i>
-                    <input type="number" placeholder="LIKES" required>
-                </div>
-            </div>
-            <textarea name="" id="result" placeholder="Result appears here"></textarea>
-            <button>Calculate</button>
-            
-        </form>
+                <button>Calculate</button>
+
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
