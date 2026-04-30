@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 :root{
-    --bgcolor: rgb(3, 3, 7);
+    --bgcolor: #FCFCFD;
     --bg2:  white;
-    --icon: #FAB005;
+    --icon: #0D9488;
     --shado: #152A48 ;
     --shado2: #f8ba28 ;
     --height: 100vh;
@@ -20,7 +20,8 @@ body{
     height: var(--height);
     justify-content: center;
     align-items: center;
-    background-color: var(--shado2);
+    background-color: var(--bgcolor);
+    font-family: 'Geist, Manrope, Inter';
 }
 .card{
     width: 400px;
@@ -28,6 +29,7 @@ body{
     background: white;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px var(--shado);
 }
 .card h1{
     font-size: 22px;
@@ -58,13 +60,12 @@ form{
     display: flex;
     align-items: center;
     gap: var(--space);
+    
     /* background: var(--bg2);
     padding: 10px;
     border-radius: var(--radius);
     */
-    box-shadow: 0 4px 10px var(--shado); 
-    border: 1px solid #ddd;
-    border-radius: var(--radius);
+
 }
 /* .media-info input{
     border: none;
@@ -76,6 +77,11 @@ form{
  .media-info input {
     padding: 12px;
     border: none;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 25px #ddd;
  }
 .media-info i{
     color: var(--icon);
@@ -93,4 +99,8 @@ form{
 }
 form > button{
     width: 100%;
+    background-color: var(--icon);
+    border: none;
+    height: 50px;
+    border-radius: var(--radius);
 }
