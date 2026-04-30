@@ -21,10 +21,13 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--bgcolor);
-    font-family: 'Geist, Manrope, Inter';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    line-height: 2rem;
 }
 .card{
-    width: 400px;
+    width: 500px;
     padding: 30px;
     background: white;
     border-radius: 16px;
