@@ -100,18 +100,16 @@ form{
     box-shadow: 0 4px 10px var(--shado);
     resize: none;
 }
-form > button{
+button{
     width: 100%;
     background-color: var(--icon);
     border: none;
     height: 50px;
     border-radius: var(--radius);
-<<<<<<< HEAD
     transition: 0.5s ease-in ;
 }
 button:hover{
     transform: translateY(-5px);
-=======
 }
 .result-div{
     margin-top: 5%;
@@ -160,5 +158,4 @@ button:hover{
     .remark{
         font-size: 10px;
     }
->>>>>>> origin/primary
 }

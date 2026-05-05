@@ -45,3 +45,47 @@
 
 
 // END PROGRAM
+
+
+document.getElementById('calc-form').addEventListener('submit', function(e) {
+
+     e.preventDefault(); 
+
+    let followers = Number(document.getElementById("followers").value);
+    let likes = Number(document.getElementById("likes").value);
+    let comments = Number(document.getElementById("comments").value);
+
+    if (followers <= 0) {
+        alert("Followers must be greater than 0");
+        return;
+    }
+    let value = ((likes + comments) / followers) * 100;
+    value = value.toFixed(2);
+
+
+    let message = "";
+
+    if (value < 1) {
+        message = "Low engagement. Your content may not be resonating with your audience.";
+    } else if (value >= 1 && value <= 3.4) {
+        message = "Average engagement. Solid performance, but there is room to grow.";
+    } else if (value >= 3.5 && value <= 6) {
+        message = "Good engagement. Your audience is responding well.";
+    } else {
+        message = "Excellent engagement. This is top-performing content!";
+    }
+
+     document.getElementById("final-result").innerHTML =
+        value + '<span class="percentage">%</span>';
+
+    document.getElementById("remark-text").innerText = message;
+    let resultEl = document.getElementById("final-result");
+
+if (value < 1) resultEl.style.color = "red";
+else if (value <= 3.4) resultEl.style.color = "orange";
+else if (value <= 6) resultEl.style.color = "blue";
+else resultEl.style.color = "green";
+
+})
+
+
