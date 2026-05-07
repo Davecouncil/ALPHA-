@@ -54,12 +54,13 @@ document.getElementById('calc-form').addEventListener('submit', function(e) {
     let followers = Number(document.getElementById("followers").value);
     let likes = Number(document.getElementById("likes").value);
     let comments = Number(document.getElementById("comments").value);
+    let shares= Number(document.getElementById("shares").value);
 
     if (followers <= 0) {
         alert("Followers must be greater than 0");
         return;
     }
-    let value = ((likes + comments) / followers) * 100;
+    let value = ((likes + comments + shares) / followers) * 100;
     value = value.toFixed(2);
 
 
